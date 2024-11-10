@@ -1,7 +1,8 @@
 ﻿# Projeto Biblioteca:
 
-    O projeto é um sistema basico de registro de usuarios e livros, onde esta sendo feito o controle de emprestimos... além de um crud (criação, visualização, edição e exclusão) dos items que pertencem ao sistema.
-    O mesmo foi criado em **Java** utilizando servelets e como gerenciador de banco de dados o **Mysql**.
+    O projeto é um sistema basico de registro de usuarios e livros, onde esta sendo feito o controle
+    de emprestimos... além de um crud (criação, visualização, edição e exclusão) dos items que pertencem ao sistema.
+    O mesmo foi criado em Java utilizando servelets e como gerenciador de banco de dados o Mysql.
 
 ## Diagrama de casos de Uso:
 
@@ -56,19 +57,8 @@ CREATE TABLE loans (
 
 
 ```
----
-
-Criação de usuario que esta configurado no sistema: 
-
-```
-create user 'manageslibrary'@'localhost' IDENTIFIED BY '123456';
-
-GRANT ALL ON Library.* TO 'manageslibrary'@'localhost';
-
-FLUSH PRIVILEGES;
 
 
-```
 
 
 ## Padrão MVC 
