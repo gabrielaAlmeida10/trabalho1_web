@@ -44,16 +44,12 @@ CREATE TABLE books (
 
 CREATE TABLE loans (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    user_id INT,
-    book_id INT,
-    loan_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    user_name VARCHAR(200),
+    book_name VARCHAR(100),
+    loan_date DATE,
     return_date DATE,
-    returned BOOLEAN DEFAULT FALSE,
-    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
-    FOREIGN KEY (book_id) REFERENCES books(id) ON DELETE CASCADE
+    returned BOOLEAN DEFAULT FALSE
 );
-
-
 
 
 ```
